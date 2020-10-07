@@ -1,0 +1,82 @@
+/* 
+    We will learn about CSS in much more detail later, but you can think of each "rule" trying to find some specific tag in our HTML file.
+    For example, the html block directly below applies the rules inside the { } to our page.
+*/
+html {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+}
+
+/* 
+    These are layout rules, they shape where the content on the page is placed. I would start by changing other easier blocks.
+    You will notice some blocks start with the # character, these are looking for tags in our HTML file that have the corresponding "id" that follows the #
+    For example, this block applies the layout rules to the tag in our HTML file that has the page-container id
+*/
+#page-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+/* 
+    These are the simple CSS blocks and rules. They are changing things like the font color,  the font family and how the text is being aligned
+    All of these things are common things to manipulate in a word document. Try changing to a different font or color. Maybe try aligning the text differently.
+    There are TONS of different CSS rules that can be applied. See if you can do something funky like rotate the h1 tags or something of that nature.
+*/
+
+h1 {
+    color: #EF8354;
+    font-family: 'MuseoModerno', cursive;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* 
+    These blocks and rules below are a bit more advanced and have to deal with the secrets I have sprinkled throughout the site
+    We will learn about how all of these work, but if you would like try to understand how they are working.
+*/
+
+#secret-one {
+    transition: font-size 1s ease-in-out;
+}
+
+#secret-one:hover {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: font-size 1s ease-in-out;
+}
+
+#secret-one:active {
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+#secret-two:hover {
+    cursor: pointer;
+}
+
+#secret-two:active {
+    display: none;
+}
+
+#secret-three {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#secret-three:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#secret-three:active {
+    color: #BFC0C0;
+    cursor: pointer;
+}
