@@ -1,0 +1,45 @@
+/* 
+    We will learn about CSS in much more detail later, but you can think of each "rule" trying to find some specific tag in our HTML file.
+    For example, the html block directly below applies the rules inside the { } to our page.
+*/
+html {
+    background: #2D3142;
+    color: #6c4d08;
+}
+
+.header {
+    background-image: url("header.jpg");
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* The navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .navbar a:hover {
+    background-color: cyan;
+    color: black;
+  }
+
+  .videos {
+      float: left;
+
+  }
+
+  .videos {
+      float: right;
+  }
