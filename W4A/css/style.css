@@ -43,3 +43,12 @@ html {
   .videos {
       float: right;
   }
+
+img {
+  -webkit-filter: invert(.8);
+  filter: invert(.8);
+}
+
+  pre {
+    font-size: "10vmin";
+  }
