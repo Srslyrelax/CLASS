@@ -1,7 +1,3 @@
-/* 
-    We will learn about CSS in much more detail later, but you can think of each "rule" trying to find some specific tag in our HTML file.
-    For example, the html block directly below applies the rules inside the { } to our page.
-*/
 html {
     background: #2D3142;
     color: #6c4d08;
@@ -67,3 +63,5 @@ img {
     p::first-letter {
       font-size: 1.5em;
     }
+
+    
