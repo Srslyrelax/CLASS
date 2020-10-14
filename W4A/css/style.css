@@ -64,4 +64,28 @@ img {
       font-size: 1.5em;
     }
 
+    .c1 {
+      color: yellow;
+      text-indent: 10%;
+    }
+
+    .c2 {
+      color: red;
+      text-indent: 15%;
+    }
     
+    .c3 {
+      color: purple;
+      text-indent: 20%;
+    }
+
+    .c4 {
+      color: green;
+      text-indent: 25%;
+    }
+
+    .backwards + .forwards {
+      background-color: yellow;
+    }
+
+  
