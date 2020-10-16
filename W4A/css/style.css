@@ -88,4 +88,71 @@ img {
       background-color: yellow;
     }
 
-  
+    .flexcon {
+      display: flex;
+      flex-direction: row;
+      background-color: blueviolet;
+    }
+    
+      .flexcon * {
+        background-color: #f1f1f1;
+        padding: 100px;
+        margin: 10px;
+        border-style: solid;
+        flex-grow: 1 ;
+    }
+
+      .flexcon div:nth-child(4) {
+        border: 10px dotted black;
+      }
+
+      .flexcon div:active {
+        background-color: orange;
+      }
+
+      .flexcon > *:hover {
+        background-color: green;
+      }
+     
+      .flexcon *:nth-child(2):hover {
+        background-color: red;
+      }
+
+      .flexcon *:nth-child(2):active {
+        background-color: yellow;
+      }
+
+      .flexcon :visited {
+        background-color: yellow;
+      }
+
+      .flexcon :link {
+       background-color: cyan;
+      }
+
+      .flexcon2 {
+        display: flex;
+        flex-direction: row;
+        background-color: blueviolet;
+      }
+      
+        .flexcon2 * {
+          background-color: #f1f1f1;
+          padding: 100px;
+          margin: 10px;
+          border-style: solid;
+          flex-grow: 1 ;
+
+      }
+
+.blacksheep {
+  background-color: black;
+}
+
+.blacksheep ~ div {
+  background-color: lightgrey;
+}
+
+.blacksheep + div {
+  background-color: darkgrey;
+}
